@@ -21,10 +21,13 @@ GENERAL
 -----------------------
 */
 
-body {
+html, body {
     margin: 0;
     padding: 0;
-    overscroll-behavior: none;
+    overscroll-behavior-y: none;
+    background-color: #000406;
+    font-family: "Jetbrains Mono";
+    color: white;
 }
 
 /*
@@ -32,6 +35,46 @@ body {
 HEADER
 -----------------------
 */
+
+/*Navbar*/
+
+nav {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #081117;
+    background-color: #010608;
+    padding: 15px 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: font-weight 0.5s ease;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #604cff;
+    width: 0;
+    margin: 0 auto;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    font-weight: bolder;
+}
 
 /*
 -----------------------
