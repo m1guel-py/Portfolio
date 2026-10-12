@@ -11,6 +11,10 @@ CLASS
 -----------------------
 */
 
+.spacement {
+    margin: 100px 0;
+}
+
 .image_style_technologies {
     width: 100px;
 }
@@ -28,6 +32,13 @@ html, body {
     background-color: #000406;
     font-family: "Jetbrains Mono";
     color: white;
+}
+
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 25px;
 }
 
 /*
@@ -75,6 +86,44 @@ nav a:hover::after {
 nav a:hover {
     font-weight: bolder;
 }
+
+/*Home*/
+#home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #081117;
+    padding: 0 0 15% 0;
+    max-width: 90%;
+    margin: 100px 5%;
+}
+
+#home_infos {
+    text-align: center;
+}
+
+#home_infos h2 {
+    font-family: ;
+}
+
+#home_technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #010608;
+    max-width: 50%;
+    max-height: 100%;
+}
+
+#technologies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px;
+    padding: 0;
+}
+
 
 /*
 -----------------------
