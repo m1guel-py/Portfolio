@@ -275,6 +275,7 @@ MAIN
     background-color: #010608;
     border: 1px solid #081117;
     width: 40%;
+    border-radius: 5%;
 }
 
 .box_contact img {
