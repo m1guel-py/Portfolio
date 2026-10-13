@@ -22,6 +22,15 @@ ANIMATIONS
     to {left: 59%;}
 }
 
+@keyframes technologies_popup {
+    0%, 20%, 100% {
+        transform: scale(1);
+    }
+
+    5%, 15% {
+        transform: scale(1.2);
+    }
+}
 
 /*
 -----------------------
@@ -163,8 +172,33 @@ nav a:hover {
     grid-template-rows: 1fr 1fr;
     margin: 10px;
     gap: 50px 20px;
+    transform: 0;
+
+    animation: technologies_popup 0.5s ease forwards;
 }
 
+/* Imagem 1 */
+#technologies img:nth-of-type(1) {
+    animation: technologies_popup 4s infinite;
+}
+
+/* Imagem 2 */
+#technologies img:nth-of-type(2) {
+    animation: technologies_popup 4s infinite;
+    animation-delay: 1s;
+}
+
+/* Imagem 3 */
+#technologies img:nth-of-type(3) {
+    animation: technologies_popup 4s infinite;
+    animation-delay: 2s;
+}
+
+/* Imagem 4 */
+#technologies img:nth-of-type(4) {
+    animation: technologies_popup 4s infinite;
+    animation-delay: 3s;
+}
 
 
 /*
@@ -208,11 +242,11 @@ MAIN
 
 #title_button {
     display: flex;
-    margin: 0 auto;
+    margin: 20px auto 50px auto;
 }
 
 #title_button h3 {
-    margin: auto 30px;
+    margin: 0 30px;
 }
 
 #title_button button {
@@ -220,8 +254,49 @@ MAIN
     border: none;
 }
 
+#box_project img {
+    margin: 0 auto 50px auto;
+}
+
+/*Contact*/
+#centralize_boxs {
+    display: flex;
+    gap: 180px;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.box_contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #010608;
+    border: 1px solid #081117;
+    width: 40%;
+}
+
+.box_contact img {
+    filter: invert(100%);
+    max-width: 50%;
+    margin: 25px 0;
+}
+
+
 /*
 -----------------------
 FOOTER
 -----------------------
 */
+#footer {
+    margin-top: 200px;
+}
+
+#footer_box {
+    background-color: #010608;
+    border: 1px solid #081117;
+    text-align: center;
+    font-size: 12px;
+    color: #828282;
+}
