@@ -137,11 +137,14 @@ nav a:hover {
     padding-right: 5px;
     color: #604cff;
     white-space: nowrap;
+    width: 0;
+    margin: 0;
+}
+
+.home_infos_animate {
     animation: 
         typewrite 1s steps(20, end) forwards,
         blink_border 0.8s infinite;
-    width: 0;
-    margin: 0;
 }
 
 #info_about {
