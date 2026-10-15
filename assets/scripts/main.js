@@ -4,6 +4,8 @@
 
 // HTML DOM
 const info_about_h2 = document.getElementById("info_about_h2")
+const button_after = document.getElementById("button_after")
+const button_before = document.getElementById("button_before")
 
 // Variables for use in Code
 const roles = [
@@ -22,6 +24,14 @@ let i = 0;
 
 change_work()
 
+button_after.addEventListener("click", () => {
+    change_project(true)
+})
+
+button_after.addEventListener("click", () => {
+    change_project(false)
+})
+
 //
 // Functions
 //
@@ -37,6 +47,13 @@ function change_work() {
     i = (i + 1) % roles.length;
 
     setTimeout(change_work, 5000);
+}
 
-    console.log("teste")
+function change_project(isAfter) {
+    if (isAfter) {
+
+    }
+    else {
+
+    }
 }
