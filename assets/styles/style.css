@@ -12,14 +12,13 @@ ANIMATIONS
 */
 
 @keyframes blink_border {
-    0% {border-color: #604cff;}
-    50% {border-color: transparent;}
-    100% {border-color: #604cff;}
+    from {border-color: transparent;}
+    to {border-color: #604cff;}
 }
 
 @keyframes typewrite {
-    from {left: 42%;}
-    to {left: 59%;}
+    from {width: 0;}
+    to {width: 100%;}
 }
 
 @keyframes technologies_popup {
@@ -133,21 +132,20 @@ nav a:hover {
 }
 
 #home_infos h2 {
+    overflow: hidden;
+    border-right: .15em solid #604cff;
+    padding-right: 5px;
     color: #604cff;
-    position: relative;
+    white-space: nowrap;
+    animation: 
+        typewrite 1s steps(20, end) forwards,
+        blink_border 0.8s infinite;
+    width: 0;
+    margin: 0;
 }
 
-#home_infos h2::after {
-    content: "";
-    position: absolute;
-    height: 40px;
-    width: 0px;
-    top: 0;
-    left: 59%;
-    border: 1px solid #604cff;
-    animation: 
-        typewrite 1s linear,
-        blink_border 1s linear infinite;
+#info_about {
+    display: inline-block;
 }
 
 #home_technologies {
@@ -276,6 +274,12 @@ MAIN
     border: 1px solid #081117;
     width: 40%;
     border-radius: 5%;
+
+    transition: transform 0.5s;
+}
+
+.box_contact:hover {
+    transform: scale(1.1);
 }
 
 .box_contact img {
