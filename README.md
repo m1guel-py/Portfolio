@@ -98,7 +98,7 @@ Suggested conventions for contributions:
 **Miguel Nascimento**
 
 - **GitHub:** [@m1guel-py](https://github.com/m1guel-py)
-- **Portfolio:** Add your deployed website URL here.
+- **Portfolio:** [https://m1guel-py.vercel.app/](https://m1guel-py.vercel.app/)
 
 ---
 
