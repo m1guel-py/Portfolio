@@ -1,4 +1,4 @@
-# Miguel Nascimento | Portfolio
+# m1guel-py | Portfolio
 
 My personal portfolio website, built to showcase my projects, development skills, and learning journey as a developer.
 
