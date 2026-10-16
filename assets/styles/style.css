@@ -301,6 +301,7 @@ MAIN
     transform: rotateY(180deg);
     color: white;
     padding: 50px;
+    justify-content: center;
     align-items: center;
     text-align: center;
     box-sizing: border-box;
@@ -324,6 +325,7 @@ MAIN
     border: 1px solid #081117;
     width: 40%;
     border-radius: 5%;
+    cursor: pointer;
 
     transition: transform 0.5s;
 }

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "OneHour",
+    "description": "A minimalist Pomodoro timer designed to improve focus and productivity through structured work sessions and breaks.",
+    "image_path": "../assets/images/one-hour.png",
+    "status": "Completed"
+  },
+  {
+    "id": 2,
+    "name": "LimpeJá",
+    "description": "A school class organization application designed to help students coordinate classroom cleaning tasks and responsibilities.",
+    "image_path": "../assets/images/limpeja.png",
+    "status": "Completed"
+  },
+  {
+    "id": 3,
+    "name": "Local Barber",
+    "description": "A fictional barbershop landing page featuring a modern dark design, elegant typography, and a responsive layout.",
+    "image_path": "../assets/images/local-barber.png",
+    "status": "Completed"
+  },
+  {
+    "id": 4,
+    "name": "In Time - New Vibe",
+    "description": "A desktop wallpaper changer built with Python and CustomTkinter, allowing users to switch wallpapers based on the time of day.",
+    "image_path": "../assets/images/intime_newvibe.png",
+    "status": "In Development"
+  },
+  {
+    "id": 5,
+    "name": "Future Projects",
+    "description": "A new project currently being planned.",
+    "image_path": "../assets/images/future-project.png",
+    "status": "Planned"
+  }
+]
