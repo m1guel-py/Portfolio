@@ -11,6 +11,7 @@ const card_image = document.getElementById("card_image")
 const text_project = document.getElementById("text_project")
 const box_github = document.getElementById("box_github")
 const box_gmail = document.getElementById("box_gmail")
+const card = document.querySelector(".card");
 
 // Variables for use in Code
 const roles = [
@@ -35,6 +36,8 @@ button_after.addEventListener("click", () => {change_project(true)})
 button_before.addEventListener("click", () => {change_project(false)})
 
 box_github.addEventListener("click", () => {window.location.href = "https://github.com/m1guel-py"})
+
+card.addEventListener("click", () => {card.classList.toggle("is-flipped");});
 
 fetch('assets/scripts/project_info.json')
         .then(response => response.json()) // Parse JSON

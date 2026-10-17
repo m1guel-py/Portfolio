@@ -301,7 +301,7 @@ MAIN
     transform: rotateY(180deg);
     color: white;
     padding: 50px;
-    justify-content: centerw;
+    justify-content: center;
     align-items: center;
     text-align: center;
     box-sizing: border-box;
@@ -356,4 +356,381 @@ FOOTER
     text-align: center;
     font-size: 12px;
     color: #828282;
+}
+
+/*
+--------------------------
+
+RESPONSIVIDADE
+
+--------------------------
+*/
+
+
+/* =========================
+   RESPONSIVIDADE — TABLETS
+========================= */
+
+@media (max-width: 1024px) {
+
+    /* Navbar */
+    nav {
+        max-width: 80%;
+        gap: 24px;
+    }
+
+    /* Home */
+    #home {
+        grid-template-columns: 1.5fr 1fr;
+        width: 92%;
+        max-width: none;
+        margin: 80px auto;
+        gap: 20px;
+    }
+
+    #home_technologies {
+        max-width: 100%;
+    }
+
+    #technologies {
+        gap: 30px 15px;
+    }
+
+    .image_style_technologies {
+        width: 75px;
+    }
+
+    /* About */
+    #box_about {
+        max-width: 85%;
+        padding: 25px;
+        gap: 25px;
+    }
+
+    #box_about img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        margin: 20px 0;
+        flex-shrink: 0;
+    }
+
+    /* Projects */
+    #box_project {
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+        min-height: 550px;
+        padding: 25px 0;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 85%;
+        height: 400px;
+    }
+
+    /* Contact */
+    #centralize_boxs {
+        width: 75%;
+        gap: 40px;
+    }
+
+    .box_contact {
+        flex: 1;
+        min-width: 0;
+    }
+}
+
+
+/* =========================
+   RESPONSIVIDADE — CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    /* Geral */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .spacement {
+        margin: 65px 0;
+    }
+
+    h1 {
+        font-size: clamp(25px, 7vw, 32px);
+    }
+
+    h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* Navbar */
+    nav {
+        width: calc(100% - 32px);
+        max-width: none;
+        box-sizing: border-box;
+        gap: 0;
+        justify-content: space-around;
+        padding: 15px 8px;
+        border-top: none;
+        border-radius: 0 0 16px 16px;
+    }
+
+    nav a {
+        font-size: clamp(11px, 3.2vw, 14px);
+    }
+
+    /* Home */
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        width: auto;
+        max-width: none;
+        height: auto;
+        margin: 65px 16px;
+    }
+
+    #home_infos {
+        width: 100%;
+        text-align: center;
+    }
+
+    #home_infos h1 {
+        margin-bottom: 12px;
+    }
+
+    #home_infos h2 {
+        font-size: 23px;
+    }
+
+    #home_technologies {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px 15px 25px;
+        border-radius: 18px;
+    }
+
+    #home_technologies h3 {
+        margin: 0 0 25px;
+        font-size: 20px;
+    }
+
+    #technologies {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: auto auto;
+        justify-items: center;
+        gap: 25px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .image_style_technologies {
+        width: clamp(55px, 18vw, 75px);
+        max-width: 100%;
+    }
+
+    /* About */
+    #box_about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 32px);
+        max-width: 420px;
+        box-sizing: border-box;
+        padding: 25px 20px;
+        gap: 15px;
+        border-radius: 20px;
+    }
+
+    #box_about img {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        margin: 0 auto 10px;
+    }
+
+    #about_text {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #about_text p {
+        font-size: 13px;
+        line-height: 1.8;
+        overflow-wrap: break-word;
+        margin: 0 0 18px;
+    }
+
+    #about_text p:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Projects */
+    #box_project {
+        width: calc(100% - 32px);
+        min-height: 0;
+        height: auto;
+        padding: 20px 12px;
+        border-radius: 20px;
+    }
+
+    #title_button {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin: 5px auto 25px;
+    }
+
+    #title_button h3 {
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+        max-width: 65%;
+        overflow-wrap: anywhere;
+    }
+
+    #title_button button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 36px;
+        min-height: 44px;
+        padding: 5px;
+    }
+
+    #title_button button img {
+        width: 22px;
+        height: auto;
+    }
+
+    .card {
+        width: 100%;
+        height: clamp(220px, 65vw, 320px);
+        margin: 0 auto;
+    }
+
+    .card_front,
+    .card_back {
+        border-radius: 10px;
+    }
+
+    .card_front img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .card_back {
+        padding: 20px;
+        font-size: 13px;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    /* Em telas touch, o toque vira o card */
+    @media (hover: none) {
+        .card:hover .card_inner {
+            transform: none;
+        }
+
+        .card.is-flipped .card_inner {
+            transform: rotateY(180deg);
+        }
+    }
+
+    /* Contact */
+    #centralize_boxs {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        width: calc(100% - 32px);
+        max-width: 420px;
+        gap: 15px;
+    }
+
+    .box_contact {
+        width: auto;
+        flex: 1;
+        min-width: 0;
+        padding: 15px 8px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .box_contact img {
+        width: 45px;
+        max-width: 65%;
+        margin: 10px 0;
+    }
+
+    .box_contact p {
+        font-size: 11px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    /* Footer */
+    #footer {
+        margin-top: 100px;
+    }
+
+    #footer_box {
+        padding: 10px 12px;
+        box-sizing: border-box;
+    }
+
+    #footer_box p {
+        font-size: 10px;
+        line-height: 1.8;
+        margin: 5px 0;
+    }
+}
+
+
+/* =========================
+   CELULARES MUITO ESTREITOS
+========================= */
+
+@media (max-width: 360px) {
+
+    nav a {
+        font-size: 10px;
+    }
+
+    #home_infos h1 {
+        font-size: 25px;
+    }
+
+    #box_about {
+        padding: 20px 15px;
+    }
+
+    #about_text p {
+        font-size: 12px;
+    }
+
+    #centralize_boxs {
+        gap: 10px;
+    }
+
+    .box_contact p {
+        font-size: 10px;
+    }
 }
